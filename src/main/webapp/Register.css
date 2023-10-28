@@ -1,0 +1,65 @@
+@charset "ISO-8859-1";
+
+/* General styles for the entire page */
+body {
+    background-color: #F5F5F5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Styles for the page title */
+h1 {
+    text-align: center;
+    color: #4CAF50; /* Green */
+}
+
+/* Styles for the registration form */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #4CAF50; /* Green */
+    border-radius: 4px;
+    margin: 5px 0;
+}
+
+.form-group input[type="submit"] {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: #45A049; /* Darker Green on hover */
+}
+
+/* Styles for the login link */
+p {
+    text-align: center;
+}
+
+p a {
+    color: #4CAF50; /* Green */
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
