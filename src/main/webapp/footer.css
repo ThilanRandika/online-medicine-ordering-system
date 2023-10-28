@@ -1,0 +1,59 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, h4, h5, h6, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; /* Apply 'Poppins' font to the entire document */
+}
+
+/* Style for the site-footer */
+.site-footer {
+    background-color: #2E7D32; /* Green background color */
+    color: #fff; /* White text color */
+    padding: 30px 0;
+}
+
+/* Container for the footer content */
+.footercontainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Style for each section within the footer */
+.footer-section {
+    flex: 0 1 30%; /* Set the width of each section */
+    text-align: center;
+}
+
+/* Styling for contact information, footer links, and social media icons */
+.contact-info li,
+.footer-links li {
+    list-style: none;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.contact-info i,
+.footer-links a {
+    margin-right: 8px;
+    color: #fff; /* Set link color to white */
+    text-decoration: none; /* Remove underlines from links */
+}
+
+.contact-info i:hover,
+.footer-links a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.social-icons li {
+    list-style: none;
+    display: inline;
+    margin-right: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
