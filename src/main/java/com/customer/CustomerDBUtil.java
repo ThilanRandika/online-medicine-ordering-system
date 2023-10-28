@@ -13,6 +13,8 @@ public class CustomerDBUtil {
 	private static ResultSet rs = null;
 	private static boolean isSucess;
 	
+	//user name password validation
+	
 	public static boolean validate(String userName, String password){
 		try {
 			con = DBConnect.getConnection();	
@@ -95,15 +97,14 @@ public class CustomerDBUtil {
 	
 	
 	
-	public static List<Customer> getCustomerDetails(String ID) {
-		int convertedId = Integer.parseInt(ID);
+	public static List<Customer> getCustomerDetails(int ID) {
 		
 		ArrayList<Customer> cus = new ArrayList<>();
 		
 		try {
 			con = DBConnect.getConnection();
 			stmt = con.createStatement();
-			String sql = "select * from customer where id '" + convertedId + "' ";
+			String sql = "select * from customer where id '" + ID + "' ";
 			rs = stmt.executeQuery(sql);
 			
 			while(rs.next()) {
@@ -131,14 +132,13 @@ public class CustomerDBUtil {
 	
 	
 	
-public static boolean updatecustomer(String id, String name, String email, String phone, String username, String password) {
+public static boolean updatecustomer(int id, String name, String email, String phone, String username, String password, String address) {
     	
     	try {
     		
     		con = DBConnect.getConnection();
     		stmt = con.createStatement();
-    		String sql = "update customer set name='"+name+"',email='"+email+"',phone='"+phone+"',username='"+username+"',password='"+password+"'"
-    				+ "where id='"+id+"'";
+    		String sql = "update customer set  name='"+name+"',email='"+email+"',phone='"+phone+"',username='"+username+"',password='"+password+"', address='"+address+"' where id='"+id+"'";
     		int rs = stmt.executeUpdate(sql);
     		
     		if(rs > 0) {
@@ -156,5 +156,32 @@ public static boolean updatecustomer(String id, String name, String email, Strin
     	return isSucess;
     }
 	
+
+
+public static boolean deleteCustomer(String id) {
+	
+	int convId = Integer.parseInt(id);
+	
+	try {
+		
+		con = DBConnect.getConnection();
+		stmt = con.createStatement();
+		String sql = "delete from customer where id='"+convId+"'";
+		int r = stmt.executeUpdate(sql);
+		
+		if (r > 0) {
+			isSucess = true;
+		}
+		else {
+			isSucess = false;
+		}
+		
+	}
+	catch (Exception e) {
+		e.printStackTrace();
+	}
+	
+	return isSucess;
+}
 
 }

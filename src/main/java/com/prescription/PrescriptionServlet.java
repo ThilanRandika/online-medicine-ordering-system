@@ -41,13 +41,13 @@ public class PrescriptionServlet extends HttpServlet {
 	     String contactNumber = request.getParameter("contactNumber");
 	     String orderType = request.getParameter("orderType");
 	     String cusId = request.getParameter("cusID");
-	     String patientName = request.getParameter("patientAge");
+	     String patientName = request.getParameter("patientName");
 	     String email = request.getParameter("email");
 	     
 	     
 	     Part file1 = request.getPart("file1");
 	     String file1Name = file1.getSubmittedFileName();
-	     String uploadPathF1 = "D:" + File.separator + "java" + File.separator + "finaBest" + File.separator + "online-medicine-ordering-system" + File.separator + "src" + File.separator + "main" + File.separator +  "webapp" + File.separator + "images" + File.separator + file1Name;
+	     String uploadPathF1 =  "images" + File.separator + file1Name;
 
 	     
 	     //file handling
