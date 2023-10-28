@@ -1,0 +1,65 @@
+/* productDetailAdmin.css */
+
+/* Apply a green color theme */
+body {
+    background-color: #f0f0f0;
+}
+
+.container {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 24px;
+    color: rgb(255, 0, 0); /* Green color for headings */
+    margin-bottom: 20px;
+}
+
+.product-details {
+    display: flex;
+    margin: 20px 0;
+}
+
+.product-image {
+    flex: 1;
+    padding: 30px;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-info {
+    flex: 2;
+    padding: 10px;
+}
+
+strong {
+    color: #4CAF50; /* Green color for strong elements */
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: rgb(255, 0, 0); /* Green color for submit button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(193, 0, 0); /* Darker green color on hover */
+}
