@@ -1,0 +1,38 @@
+@charset "ISO-8859-1";
+
+body {
+    background-color: #E1F5E6; /* Light green background */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.welcome-section {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.welcome-section h1 {
+    font-size: 2rem;
+}
+
+.featured-products {
+    text-align: center;
+}
+
+.featured-products h2 {
+    font-size: 1.5rem;
+}
+
+footer {
+    background-color: #14793E; /* Dark green footer background */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
