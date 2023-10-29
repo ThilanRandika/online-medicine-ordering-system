@@ -1,5 +1,4 @@
 <%@page import = "com.product.DBconnect" %>
-<%@page import="org.apache.jasper.tagplugins.jstl.core.ForEach"%>
 <%@page import = "com.product.productDB" %>
 <%@page import = "java.util.*" %>
 <%@page import = "com.product.Product" %>

@@ -14,30 +14,31 @@
         <div class="menu-items">
             <ul class="navLinks">
                 <li class="navList">
-                    <a href="AdminHome.jsp">
-                        <span class="links">Home</span>
-                    </a>
-                </li>
-                <li class="navList ">
-                    <a href="#">
-                        <ion-icon name="stats-chart-outline"></ion-icon>
+                    <a href="newDasgBoard.jsp">
+                        <ion-icon name="home-outline"></ion-icon>
                         <span class="links">Dashboard</span>
                     </a>
                 </li>
-                <li class="navList">
+                <li class="navList ">
                     <a href="AdminproductListPage.jsp">
                         <ion-icon name="folder-outline"></ion-icon>
                         <span class="links">Products</span>
                     </a>
                 </li>
                 <li class="navList">
-                    <a href="#">
+                    <a href="">
                         <ion-icon name="ticket-outline"></ion-icon>
                         <span class="links">Staff</span>
                     </a>
                 </li>
+                <li class="navList">
+                    <a href="#">
+                        <ion-icon name="ticket-outline"></ion-icon>
+                        <span class="links">Users</span>
+                    </a>
+                </li>
                 <li class="navList active">
-                    <a href="productDetailPage.jsp">
+                    <a href="addproductform.jsp">
                         <ion-icon name="star-half-outline"></ion-icon>
                         <span class="links">Add Product</span>
                     </a>
@@ -45,13 +46,13 @@
                
             </ul>
             <ul class="bottom-link">
-                <li>
-                    <a href="#">
+                <li class="navList">
+                    <a href="AdminProfile.jsp">
                         <ion-icon name="person-circle-outline"></ion-icon>
                         <span class="links">Profile</span>
                     </a>
                 </li>
-                <li>
+                <li class="navList">
                     <a href="#">
                         <ion-icon name="log-out-outline"></ion-icon>
                         <span class="links">Logout</span>

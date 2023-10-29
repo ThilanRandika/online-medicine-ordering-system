@@ -45,13 +45,13 @@
                
             </ul>
             <ul class="bottom-link">
-                <li>
-                    <a href="#">
+                <li class="navList">
+                    <a href="AdminProfile.jsp">
                         <ion-icon name="person-circle-outline"></ion-icon>
                         <span class="links">Profile</span>
                     </a>
                 </li>
-                <li>
+                <li class="navList">
                     <a href="#">
                         <ion-icon name="log-out-outline"></ion-icon>
                         <span class="links">Logout</span>
@@ -69,7 +69,7 @@
     
     <div class="container">
         <h1>Edit Product Details</h1>
-        <form action="update" method="post" enctype="multipart/form-data">
+        <form action="updateproduct" method="post" enctype="multipart/form-data">
             <div class="product-details">
 	              	<div class="product-image">
 	                  <img src="<%= request.getContextPath() %>/productImage/<%= ((Product) session.getAttribute("editProduct")).getProductImage() %>" alt="Product Image">
