@@ -82,11 +82,12 @@
 
 
 <servlet>
-	<servlet-name>updatecustomer</servlet-name>
+
+	<servlet-name>UpdateCustomerServlet</servlet-name>
 	<servlet-class>com.customer.UpdateCustomerServlet</servlet-class>
 </servlet>
 <servlet-mapping>
-	<servlet-name>updatecustomer</servlet-name>
+	<servlet-name>UpdateCustomerServlet</servlet-name>
 	<url-pattern>/update</url-pattern>
 </servlet-mapping>
 
@@ -100,6 +101,7 @@
 	<servlet-name>deletecustomer</servlet-name>
 	<url-pattern>/delete</url-pattern>
 </servlet-mapping>
+
 
 
 		 <servlet>
@@ -131,4 +133,5 @@
          	<url-pattern>/deleteproduct</url-pattern>
          </servlet-mapping>
          
+
 </web-app>
