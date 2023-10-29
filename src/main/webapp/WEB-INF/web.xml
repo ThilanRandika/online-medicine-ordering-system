@@ -82,6 +82,7 @@
 
 
 <servlet>
+
 	<servlet-name>UpdateCustomerServlet</servlet-name>
 	<servlet-class>com.customer.UpdateCustomerServlet</servlet-class>
 </servlet>
@@ -103,5 +104,34 @@
 
 
 
+		 <servlet>
+       		<servlet-name>productInsert</servlet-name>
+       		<servlet-class>com.product.productInsert</servlet-class>
+         </servlet>
+         <servlet-mapping>
+         	<servlet-name>productInsert</servlet-name>
+         	<url-pattern>/productinsert</url-pattern>
+         </servlet-mapping>
+         
+         
+         <servlet>
+         	<servlet-name>UpdateProduct</servlet-name>
+         	<servlet-class>com.product.UpdateProduct</servlet-class>
+         </servlet>
+         <servlet-mapping>
+         	<servlet-name>UpdateProduct</servlet-name>
+         	<url-pattern>/updateproduct</url-pattern>
+         </servlet-mapping>
+         
+         
+		 <servlet>
+         	<servlet-name>DeleteProduct</servlet-name>
+         	<servlet-class>com.product.DeleteProduct</servlet-class>
+         </servlet>
+         <servlet-mapping>
+         	<servlet-name>DeleteProduct</servlet-name>
+         	<url-pattern>/deleteproduct</url-pattern>
+         </servlet-mapping>
+         
 
 </web-app>

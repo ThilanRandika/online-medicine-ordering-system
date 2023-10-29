@@ -16,8 +16,9 @@ import javax.servlet.http.Part;
 /**
  * Servlet implementation class productInsert
  */
-@MultipartConfig
+
 @WebServlet("/productInsert")
+@MultipartConfig
 public class productInsert extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -43,8 +44,8 @@ public class productInsert extends HttpServlet {
 		
 		Part productImage = request.getPart("image");
 		
-		String imageName = productImage.getSubmittedFileName();
-		String imagePath = "C:/Users/sande/eclipse-workspace/projectTest1/src/main/webapp/productImage/" + imageName ;
+		String imageName = productImage.getName();
+		String imagePath = "C:/Users/sande/OneDrive/Desktop/repo_Project/online-medicine-ordering-system/src/main/webapp/productImage/" + imageName ;
 		
 		//catche the errors in file handling 
 		try {

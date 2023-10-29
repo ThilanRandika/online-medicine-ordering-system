@@ -1,6 +1,5 @@
 <!-- product.jsp -->
 <%@page import = "com.product.DBconnect" %>
-<%@page import="org.apache.jasper.tagplugins.jstl.core.ForEach"%>
 <%@page import = "com.product.productDB" %>
 <%@page import = "java.util.*" %>
 <%@page import = "com.product.Product" %>
@@ -44,16 +43,22 @@
                         <span class="links">Users</span>
                     </a>
                 </li>
+                <li class="navList">
+                    <a href="addproductform.jsp">
+                        <ion-icon name="star-half-outline"></ion-icon>
+                        <span class="links">Add Product</span>
+                    </a>
+                </li>
                
             </ul>
             <ul class="bottom-link">
-                <li>
-                    <a href="#">
+                <li class="navList">
+                    <a href="AdminProfile.jsp">
                         <ion-icon name="person-circle-outline"></ion-icon>
                         <span class="links">Profile</span>
                     </a>
                 </li>
-                <li>
+                <li class="navList">
                     <a href="#">
                         <ion-icon name="log-out-outline"></ion-icon>
                         <span class="links">Logout</span>

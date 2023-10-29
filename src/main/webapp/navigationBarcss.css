@@ -37,8 +37,13 @@ header {
 }
 
 .logo img {
-    max-width: 30px; /* Adjust the size as needed */
-    margin-right: 10px;
+
+    width: 50px; /* Adjust the width as needed */
+    height: auto; /* Automatically adjust the height according to the aspect ratio */
+    border-radius: 50%; /* Rounds the image into a circle */
+    overflow: hidden; /* Hides any image overflow beyond the circle */
+    display: block; /* Adjust the width as needed */
+
 }
 
 .nav-links {
@@ -72,7 +77,9 @@ header {
     border: none;
     outline: none;
     padding: 10px; /* Increase the padding to make the input taller */
-    width: 180px; /* Increase the width to adjust the length */
+
+    width: 300px; /* Increase the width to adjust the length */
+
     font-size: 16px; /* Adjust the font size as needed */
 }
 
@@ -91,4 +98,9 @@ header {
     text-shadow: 0 0 5px #fff; /* White outline on hover */
 }
 
+
+.align-right {
+    float: right;
+    margin-left: 10px; /* Adjust as needed for spacing between elements */
+}
 
