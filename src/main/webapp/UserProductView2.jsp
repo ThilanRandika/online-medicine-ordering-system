@@ -70,7 +70,7 @@
     <div class="container">
         <h1>Product Details</h1>
         <div class="product-image">
-            <img src="<%= request.getContextPath() %>/image/<%= p.getProductImage() %>" alt="Product Image">
+            <img src="<%= request.getContextPath() %>/productImage/<%= p.getProductImage() %>" alt="Product Image">
         </div>
         
         

@@ -1,19 +1,21 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ page import="com.product.Product" %>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>Product Details (Admin Delete)</title>
-    <link rel="stylesheet" type="text/css" href="DeleteProduct.css">
-    <link rel="stylesheet" href="AdminDashBoardcss.css">
+    <title>Admin Profile</title>
+    <link rel="stylesheet" type="text/css" href="AdminProfile.css">
+    <link rel="stylesheet" type="text/css" href="AdminDashBoardcss.css">
+    <!-- Add necessary stylesheets and scripts -->
 </head>
 <body>
 
- <nav>
+    <!-- Navigation bar -->
+    <nav>
         <div class="menu-items">
             <ul class="navLinks">
-                <li class="navList ">
+                <li class="navList">
                     <a href="newDasgBoard.jsp">
                         <ion-icon name="home-outline"></ion-icon>
                         <span class="links">Dashboard</span>
@@ -37,17 +39,17 @@
                         <span class="links">Users</span>
                     </a>
                 </li>
-                <li class="navList active">
-                    <a href="productDetailPage.jsp">
+                <li class="navList">
+                    <a href="addproductform.jsp">
                         <ion-icon name="star-half-outline"></ion-icon>
-                        <span class="links">Product Delete</span>
+                        <span class="links">Add Product</span>
                     </a>
                 </li>
                
             </ul>
             <ul class="bottom-link">
-                <li class="navList">
-                    <a href="AdminProfile.jsp">
+                <li class="navList active">
+                    <a href="#">
                         <ion-icon name="person-circle-outline"></ion-icon>
                         <span class="links">Profile</span>
                     </a>
@@ -65,42 +67,27 @@
     <section class="dashboard">
         <div class="container">
 
-    <div class="container">
-        <h1>Delete Product Details</h1>
-        <form action="deleteproduct" method="post" enctype="multipart/form-data">
-            <div class="product-details">
-	              	<div class="product-image">
-	                  <img src="<%= request.getContextPath() %>/productImage/<%= ((Product) session.getAttribute("deleteProduct")).getProductImage() %>" alt="Product Image">
-	                  <p><strong>Image:</strong> 
-	                  </p>
-	               </div>
-	               <div class="product-info">
-	              	<p><strong>Id:</strong> 
-	                      <input type="text" name="productId" value="<%= ((Product) session.getAttribute("deleteProduct")).getProductId() %>" readonly>
-	                  </p>
-	                  <p><strong>Name:</strong>
-	                      <input type="text" name="productName" value="<%= ((Product) session.getAttribute("deleteProduct")).getProductName() %>" readonly>
-	                  </p>
-	                  <p><strong>Category:</strong> 
-	                      <input type="text" name="productCategory" value="<%= ((Product) session.getAttribute("deleteProduct")).getProduCategory() %>" readonly>
-	                  </p>
-	                  <p><strong>Description:</strong> 
-	                      <textarea name="productDescription" rows="4" cols="50" readonly><%= ((Product) session.getAttribute("deleteProduct")).getProductDescription() %></textarea>
-	                  </p>
-	                  <p><strong>Price:</strong> 
-	                      <input type="text" name="productPrice" value="<%= ((Product) session.getAttribute("deleteProduct")).getProductPrice() %>" readonly>
-	                  </p>
-	                  <p><strong>Quantity:</strong> 
-	                      <input type="text" name="productQuantity" value="<%= ((Product) session.getAttribute("deleteProduct")).getProductQuantity() %>" readonly>
-	                  </p>
-	                  <div class="add-to-cart">
-	                      <input type="submit" value="Confirm Delete">
-	                  </div>
-	              	</div>
+    <div class="profile-container">
+        <div class="profile-info">
+            <h1>Admin Profile</h1>
+            <!-- Display Admin Information -->
+            <div class="profile-details">
+                <label>Full Name:</label>
+                <p>John Doe</p>
             </div>
-        </form>
+            <div class="profile-details">
+                <label>Email:</label>
+                <p>johndoe@example.com</p>
+            </div>
+            <!-- Add more profile information here -->
+            
+            <div class="profile-actions">
+                <a href="editProfile.jsp">Edit Profile</a>
+                <!-- Link to page where admin can edit the profile -->
+            </div>
+        </div>
     </div>
-    
+
     </div>
     </section>
     
@@ -136,5 +123,6 @@
     <!-- Sources for icons -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 </html>

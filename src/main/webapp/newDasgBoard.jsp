@@ -88,6 +88,12 @@ try {
                         <span class="links">Users</span>
                     </a>
                 </li>
+                <li class="navList">
+                    <a href="addproductform.jsp">
+                        <ion-icon name="star-half-outline"></ion-icon>
+                        <span class="links">Add Product</span>
+                    </a>
+                </li>
                
             </ul>
             <ul class="bottom-link">

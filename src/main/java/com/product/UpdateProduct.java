@@ -67,7 +67,7 @@ public class UpdateProduct extends HttpServlet {
 		
 		if (productImage != null && productImage.getSize() > 0) {
 		
-				imageName = productImage.getSubmittedFileName(); 
+				imageName = productImage.getName(); 
 				String imagePath = "C:/Users/sande/eclipse-workspace/projectTest1/src/main/webapp/image/" + imageName ;
 				
 				try {
