@@ -42,6 +42,8 @@
     </section>
 </main>
 
+<%@include file="footer.jsp" %>
+
 <footer>
     <div class="footer-content">
         <p>&copy; 2023 Medicine Ordering System</p>
