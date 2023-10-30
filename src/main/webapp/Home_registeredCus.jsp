@@ -53,47 +53,7 @@
 	
 	
 	
-	<header>
-        <nav class="navbar">
-            <div class="logo">
-                <a href="#"><img src="logo.png" alt="Logo"></a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="AdminproductListPage.jsp">Products</a></li>
-                <a href="${presStatus}">
-					<li>Prescriptions</li>
-				</a>
-                
-                <li>
-                    <div class="search-bar">
-                        <input type="text" placeholder="Search">
-                        <button type="submit">Search</button>
-                    </div>
-                </li>
-                <a href="${presUpload}">
-                	<li>Upload Prescription</li>
-                </a>
-                <li id="cart-tab"><a href="#">Cart</a></li>
-                
-                <li id="profilebtn">
-                <form action="userAcc" method="post">
-					<input type="hidden" name="cusid" value="${id}" >
-					<input type="hidden" name="name" value="<${name}">
-					<input type="hidden" name="email" value="${email}">
-					<input type="hidden" name="phone" value="${phone}">
-					<input type="hidden" name="uname" value="${userName}">
-					<input type="hidden" name="pass" value="${password}">
-					<input type="hidden" name="address" value="${address}">
-				<input type="submit" name="account" value="Profile">
-				</form>
-                </li>
-                
-                <li id="logout-tab"><a href="#">Logout</a></li>
-            </ul>
-        </nav>
-    </header>
-    
+	
     
     
     <header>
@@ -142,7 +102,7 @@
     <div class="order-products">
         <h1>Order Your Products</h1>
         <p>Find and order the medicines you need</p>
-        <a href=""><button>Order Now</button></a>
+        <a href="allProduct.jsp"><button>Order Now</button></a>
     </div>
 </div>
 

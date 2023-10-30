@@ -7,8 +7,6 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.customer.DBConnect;
-
 public class PrescriptionDBUtil {
 	
 	private static Connection con = null;

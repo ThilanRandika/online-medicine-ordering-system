@@ -1,4 +1,4 @@
-package com.customer;
+package com.prescription;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
