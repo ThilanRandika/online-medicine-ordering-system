@@ -16,8 +16,8 @@
                 <a href="#"><img src="system_images\logo.png" alt="Logo"></a>
             </div>
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="AdminproductListPage.jsp">Products</a></li>
+                <li><a href="Home_registeredCus.jsp">Home</a></li>
+                <li><a href="allProduct.jsp">Products</a></li>
                 <li>
 
                     <form class="search-bar" id="search-form" action="SearchProductServlet" method="post">
