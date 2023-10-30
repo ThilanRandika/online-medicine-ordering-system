@@ -20,7 +20,27 @@
             </ul>
         </nav>
     </header>
-
-    <h1>Welcome, Staff</h1>
+    
+    <main class="content">
+	    <section class="welcome-section">
+	        <h1>Welcome, Staff</h1>
+	        <p>This is the staff dashboard. You have access to various features and functionalities to manage the system.</p>
+	    </section>
+	
+	    <section class="features-section">
+	        <h2>Features for Staff</h2>
+	        <ul>
+	            <li><a href="PrescriptionRequests.jsp">Manage Prescription Requests</a></li>
+	            
+	        </ul>
+	    </section>
+	</main>
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Medicine Ordering System</p>
+        </div>
+    </footer>
+    
 </body>
 </html>

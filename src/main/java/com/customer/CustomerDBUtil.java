@@ -39,6 +39,47 @@ public class CustomerDBUtil {
 	
 	
 	
+	public static boolean validateStaff(String userName, String password) {
+	    try {
+	        con = DBConnect.getConnection();
+	        stmt = con.createStatement();
+	        String sql = "select * from staff where username='" + userName + "' and password='" + password + "'";
+	        rs = stmt.executeQuery(sql);
+
+	        if (rs.next()) {
+	            return true; // Validation successful
+	        }
+	    } catch (Exception e) {
+	        e.printStackTrace();
+	    }
+
+	    return false; // Validation failed
+	}
+	
+	
+
+	public static boolean validateAdmin(String userName, String password) {
+	    try {
+	        con = DBConnect.getConnection();
+	        stmt = con.createStatement();
+	        String sql = "select * from admin where username='" + userName + "' and password='" + password + "'";
+	        rs = stmt.executeQuery(sql);
+
+	        if (rs.next()) {
+	            return true; // Validation successful
+	        }
+	    } catch (Exception e) {
+	        e.printStackTrace();
+	    }
+
+	    return false; // Validation failed
+	}
+
+	
+	
+	
+	
+	
 	public static List<Customer> getCustomer (String username){
 		
 		ArrayList<Customer> customer = new ArrayList<>();
