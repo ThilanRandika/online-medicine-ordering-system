@@ -163,7 +163,7 @@
         %>
     </div>
     <div class="view-more-container">
-        <a href="UserProductViewAllServlet"> <!-- Replace this link with the link for viewing all products -->
+        <a href="allProduct.jsp"> <!-- Replace this link with the link for viewing all products -->
             <button class="view-more-btn">View More</button>
         </a>
     </div>
