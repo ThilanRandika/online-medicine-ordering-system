@@ -1,0 +1,416 @@
+/* Styles for the entire body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* First Section */
+.first-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    background-color: rgb(199, 254, 216);
+    margin: 20px auto; /* To add 20px margin and center the section */
+    border-radius: 15px; /* Rounds the corners */
+    overflow: hidden; /* Hides image overflow if larger than the container */
+}
+
+.first-section .background-image {
+    padding-top: 50px; /* Adjust this value as needed */
+}
+
+.first-section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centers the image horizontally */
+}
+
+
+.order-products {
+    text-align: center;
+    /* Styles for the order products section */
+}
+
+/* Second Section */
+.second-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* Apply styles for the entire second section */
+}
+.upload-prescription {
+    text-align: center;
+    /* Styles for the upload prescription section */
+}
+
+/* Third Section */
+.third-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: forestgreen;
+    /* Apply styles for the entire third section */
+}
+
+
+.restoration-services {
+    text-align: center;
+    padding: 20px;
+    /* Styles for the restoration services section */
+}
+.background-image {
+    background-size: cover;
+    background-position: center;
+    height: 500px; /* Set height as needed */
+}
+
+.background-image img{
+	 width: 100%;
+    height: 400px; /* Set the desired height */
+    object-fit: cover;
+}
+
+.prescription-image {
+    background-size: cover;
+    background-position: center;
+    height: 500px; /* Set height as needed */
+}
+
+.prescription-image img {
+    width: 100%;
+    height: 400px; /* Set the desired height */
+    object-fit: cover; /* Helps maintain aspect ratio */
+}
+
+h1 {
+    font-size: 36px;
+    color: #333; /* Adjust color as needed */
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333; /* Adjust color as needed */
+    margin-bottom: 15px;
+}
+p {
+    font-size: 18px;
+    color: rgb(0, 0, 0); /* Adjust color as needed */
+    margin-bottom: 15px;
+}
+button {
+    padding: 10px 20px;
+    background-color: #2E8B57; /* Adjust button color as needed */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #3CB371; /* Change color on hover */
+}
+
+
+/* Fourth Section */
+/* ... CSS for the product cards goes here */
+
+/* Fifth Section */
+/* ... CSS for customer reviews goes here */
+
+/* Sixth Section */
+/* ... CSS for 'Find Us' form goes here */
+
+/* Seventh Section */
+/* ... CSS for 'Contact Us' form goes here */
+
+/* Eighth Section */
+/* ... CSS for service icons goes here */
+/* Fourth Section - Product Cards */
+/* Fourth Section - Product Cards */
+
+.fourth-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 30px auto;
+}
+
+.fourth-section h1 {
+    font-size: 36px;
+    color: #333; /* Adjust color as needed */
+    margin-bottom: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px; /* Adjust the gap between cards */
+}
+
+.card{
+    width: 270px;
+    height: 400px;
+    position: relative;
+    background-color: rgb(225, 225, 225);
+    box-shadow: 5px 5px 10px rgb(83, 83, 83);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+img{
+    width: 250px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: 0 -75px;
+    background-size: cover;
+}
+
+.product-detail{
+    width: 250px;
+    height: 200px;
+    background-color: #ffffff ;
+    border-radius: 0 40% 0 0;
+    padding: 0.8rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #ffffff;
+}
+
+.product-detail span{
+    color: #023609;
+    font-size: larger;
+}
+
+.product-detail p{
+    font-size: 0.8rem;
+    color: #000000;
+    margin-top: 15px;
+
+}
+
+.buttons{
+    height: 65px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price{
+    font-weight: 700;
+    font-size: 1rem;
+    color: #023609;
+
+}
+
+.btn{
+    position: relative;
+    border: none;
+    outline: none;
+    background-color: #023609;
+    color: #fff;
+    height: 40px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+.cart{
+    width: 130px;
+}
+
+.favourite {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 0.5px solid #35353f;
+    height: 40px;
+    transition: 0.3s;
+}
+
+.cart::before {
+    width: 130px;
+    border-radius: 50px;
+}
+
+.favourite::before {
+    width: 45px;
+    border-radius: 50%;
+}
+
+.btn:hover::before {
+    border-color: #fff;
+}
+
+/* Additional styles for span, p, and buttons as needed */
+
+
+.view-more-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.view-more-btn {
+    padding: 10px 20px;
+    background-color: rgb(0, 166, 0); /* Adjust button color as needed */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.view-more-btn:hover {
+    background-color: rgb(87, 255, 87);
+    color: black;
+}
+
+/* Fifth Section - Customer Reviews */
+/* Fifth Section - Customer Reviews */
+.fifth-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px auto;
+}
+
+.customer-review {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.customer-avatar {
+    height: 200px;
+    width: 200px;
+    border-radius: 20px; /* Round the border to create a circular shape */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    /* Consider adding a background-image or an actual image */
+    /* background-image: url('customer_avatar.jpg'); */
+}
+
+
+.customer-info {
+    flex: 1;
+    margin-left: 20px; /* Adjust the left margin to shift content right */
+}
+
+.customer-info h3 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.customer-info p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+}
+
+
+
+/* Seventh Section - Contact Us Form */
+/* Seventh Section - Contact Us Form */
+.seventh-section {
+    text-align: center;
+    padding: 50px;
+    background-color: rgb(37, 252, 64);
+}
+
+.contact-form {
+    display: inline-block;
+    text-align: left;
+    max-width: 500px;
+    width: 400px; /* Increased max-width */
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 30px; /* Increased margin-bottom */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px; /* Increased margin-bottom */
+    color: #333;
+}
+
+input,
+textarea {
+    width: calc(100% - 20px); /* Decreased width for better visibility */
+    padding: 15px; /* Increased padding */
+    border: 1px solid #ccc;
+    border-radius: 6px; /* Increased border-radius */
+}
+
+button {
+    background-color: rgb(0, 64, 0);
+    color: white;
+    padding: 12px 24px; /* Increased padding */
+    border: none;
+    border-radius: 6px; /* Increased border-radius */
+    cursor: pointer;
+    font-size: 18px; /* Increased font-size */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+/* Eighth Section - Our Services Icons */
+.eighth-section {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+}
+
+.our-services {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-icon {
+    display: inline-block;
+    font-size: 3em;
+    padding: 20px;
+    color: #4CAF50;
+}
+
+.service-icon i {
+    border: 2px solid #4CAF50;
+    border-radius: 50%;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.service-icon i:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+

@@ -40,6 +40,37 @@ public class productDB {
 		
 		
 		
+		public static List<Product> getFirstFourProducts() {
+		    ArrayList<Product> product = new ArrayList<Product>();
+		    
+		    try {
+		        con = DBconnect.getConnection();
+		        stmt = con.createStatement();
+		        String sql = "SELECT * FROM product ORDER BY productid LIMIT 4";
+		        
+		        rs = stmt.executeQuery(sql);
+		        
+		        while (rs.next()) {
+		            Product p = new Product();
+		            p.setProductId(rs.getInt(1));
+		            p.setProductName(rs.getString(2));
+		            p.setProduCategory(rs.getString(3));
+		            p.setProductDescription(rs.getString(4));
+		            p.setProductPrice(rs.getString(5));
+		            p.setProductQuantity(rs.getString(6));
+		            p.setProductImage(rs.getString(7));
+		            
+		            product.add(p);
+		        }
+		    } catch (Exception e) {
+		        e.printStackTrace();
+		    }
+		    
+		    return product;
+		}
+		
+		
+		
 		public static List<Product> getProductDetails() {
 			
 			ArrayList<Product> product = new ArrayList<Product>();
