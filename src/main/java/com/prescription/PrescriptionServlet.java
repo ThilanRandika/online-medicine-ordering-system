@@ -47,7 +47,7 @@ public class PrescriptionServlet extends HttpServlet {
 	     
 	     Part file1 = request.getPart("file1");
 	     String file1Name = file1.getSubmittedFileName();
-	     String uploadPathF1 =  "C:/Users/thila/Desktop/clone6/online-medicine-ordering-system/src/main/webapp/images/" + file1Name;
+	     String uploadPathF1 =  "C:/Users/thila/Desktop/clone8/online-medicine-ordering-system/src/main/webapp/images/" + file1Name;
 
 	     
 	     //file handling
